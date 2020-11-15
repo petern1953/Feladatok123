@@ -18,4 +18,17 @@ const handleClick = (button) => {
     }
 }
 
-handleClick();
+// handleClick();
+
+function addEvent2button(btn) {
+    btn.addEventListener('click', () => console.log(btn.innerText));
+}
+
+const handleClick2 = (button) => {
+    let buttons = document.querySelectorAll('.button');
+    for (let i = 0; i < buttons.length; i += 1) {
+        addEvent2button(buttons[i]);
+    }
+}
+
+handleClick2();
