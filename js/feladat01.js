@@ -1,9 +1,11 @@
+'use strict'
+
 const handleClick = (button) => {
-    button.addEventListener("click", () => console.log(this.innerText));
+    button.addEventListener('click', () => console.log(button.innerText));
 }
 
-let buttons = document.querySelectorAll(".button");
+let buttons = document.querySelectorAll('.button');
 
-for (button of buttons) {
+for (let button of buttons) {
     handleClick(button);
 }
