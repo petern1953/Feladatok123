@@ -31,11 +31,26 @@ const handleClick = () => {
 
 // handleClick();
 
+// function addEvent2button(btn) {
+//     btn.addEventListener('click', () => console.log(btn.innerText));
+// }
+
+// const handleClick2 = (button) => {
+//     let buttons = document.querySelectorAll('.button');
+//     for (let i = 0; i < buttons.length; i += 1) {
+//         addEvent2button(buttons[i]);
+//     }
+// }
+
 function addEvent2button(btn) {
-    btn.addEventListener('click', () => console.log(btn.innerText));
+    btn.addEventListener('click', (ev) => {
+        console.log(ev.target);
+        console.log(ev.target.innerText);
+        console.log(btn.innerText);
+    });
 }
 
-const handleClick2 = (button) => {
+const handleClick2 = () => {
     let buttons = document.querySelectorAll('.button');
     for (let i = 0; i < buttons.length; i += 1) {
         addEvent2button(buttons[i]);
