@@ -1,8 +1,8 @@
 // 3. Feladat
 // Hozz létre egy függvénykifejezést arrow function-nel!
 // A függvény neve 'personDataLog' legyen.
-// A függvény paraméterként egy objektumot vár, ami egy
-// 'firstname', 'lastname', és 'age' tulajdonságokkal rendelkezik.
+// A függvény paraméterként egy objektumot vár, amely
+// 'firstname', 'lastname' és 'age' tulajdonsággal rendelkezik.
 // Amennyiben bármelyik tulajdonság hiányozna, úgy rendre a következő
 // alapértelmezett értékeket vegyék fel:
 // - firstname: John, - lastname: Doe, - age: 33
@@ -12,7 +12,9 @@
 // objektumtulajdonságok értékét kell behelyettesíteni.
 
 
-const personDataLog = ({ firstName = 'John', lastName = 'Doe', age = 33 } = {}) =>
+const personDataLog = ({ firstName = 'John', lastName = 'Doe', age = 33 } = {}) => {
     console.log("My name is " + firstName + " " + lastName + ". I'm " + age + " years old.");
+    console.log(`My name is ${firstName} ${lastName}. I'm ${age} years old.`);
+};
 
 console.log(personDataLog({ firstName: 'Kuku', lastName: 'Benkó' }));
