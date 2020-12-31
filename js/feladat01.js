@@ -11,10 +11,21 @@
 
 'use strict'
 
-const handleClick = (button) => {
+// const handleClick = (button) => {
+//     let buttons = document.querySelectorAll('.button');
+//     for (let button of buttons) {
+//         button.addEventListener('click', () => console.log(button.innerText));
+//     }
+// }
+
+const handleClick = () => {
     let buttons = document.querySelectorAll('.button');
     for (let button of buttons) {
-        button.addEventListener('click', () => console.log(button.innerText));
+        button.addEventListener('click', (ev) => {
+            console.log(ev.target);
+            console.log(ev.target.textContent);
+            console.log(button.textContent);
+        });
     }
 }
 
@@ -31,4 +42,4 @@ const handleClick2 = (button) => {
     }
 }
 
-handleClick2();
+// handleClick2();
