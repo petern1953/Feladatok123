@@ -13,6 +13,8 @@ const subtraction = (a = 0, b = 0) => a - b;
 
 console.log(summation(2, 3));
 console.log(summation(2));
+console.log(summation(null, 2));
 
 console.log(subtraction(5, 3));
 console.log(subtraction(5));
+console.log(subtraction(null, 3));
