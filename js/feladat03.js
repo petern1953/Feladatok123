@@ -18,3 +18,4 @@ const personDataLog = ({ firstName = 'John', lastName = 'Doe', age = 33 } = {}) 
 };
 
 console.log(personDataLog({ firstName: 'Kuku', lastName: 'Benkó' }));
+console.log(personDataLog({}));
